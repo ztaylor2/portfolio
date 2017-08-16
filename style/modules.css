@@ -1,0 +1,66 @@
+nav {
+  display: block;
+  width: 100% - 2em;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1em;
+}
+
+nav h1 {
+  margin-top: .25em;
+  float: left;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+nav i {
+  float: right;
+  font-size: 20px;
+}
+
+nav ul {
+  display: none;
+}
+
+.carousel img {
+  max-width: 100%;
+}
+
+.projects h2 {
+  font-size: 2em;
+  padding: .5em;
+}
+
+.projects article {
+  background-color: black;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.projects h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+}
+
+.projects a {
+  color: white;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.projects img {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.projects li {
+  color: white;
+}
