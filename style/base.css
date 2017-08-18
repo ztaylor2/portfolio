@@ -1,14 +1,9 @@
 body {
   width: 100%;
   font-family: sans-serif;
-  /*background-image: url("../me.jpg");*/
 }
 
 aside {
-  /*position: fixed;*/
-
   max-width: 1000px;
-  height: 1000px;
   margin: auto;
-  /*min-width: 50px;*/
 }
