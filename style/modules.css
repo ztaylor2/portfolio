@@ -15,9 +15,12 @@
 }
 
 .content h3 {
-  text-align: center;
+  text-align: left;
+  text-indent: 2em;
   color: white;
+  font-family: serif;
   font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .content a {
