@@ -4,12 +4,43 @@ var websiteView = {};
 
 // drop down menu
 websiteView.dropdownMenu = function() {
-  // $('.fa').on('click', function() {
-  //   $('nav ul').slideToggle();
-  // });
-  // $('nav ul').hide();
+
+  $('.fa').on('click', function() {
+    $('.navLinks').slideToggle();
+  });
 };
 
+websiteView.carousel = function() {
+  // $('#carousel').css('background-image', 'url("../me.jpg")');
+
+  var index = 0;
+  var imgList = [$('#1'), $('#2'), $('#3'), $('#4')];
+
+  console.log(imgList);
+
+  $('.button-right').on('click', function() {
+    index++;
+    $('.slide').hide();
+    if(index === 4) {
+      index = 0;
+    }
+    imgList[index].show();
+
+  });
+
+
+  $('.button-left').on('click', function() {
+    index--;
+    $('.slide').hide();
+    if(index === -1) {
+      index = 3;
+    }
+    imgList[index].show();
+  });
+
+  $('.slide').hide();
+  imgList[index].show();
+};
 
 // set up nav bar
 websiteView.navigationTabs = function() {
@@ -31,4 +62,5 @@ websiteView.navigationTabs = function() {
 $(document).ready(function() {
   websiteView.navigationTabs();
   websiteView.dropdownMenu();
+  websiteView.carousel();
 });

@@ -21,16 +21,36 @@ nav h1 {
   font-size: 3em;
 }
 
-nav ul {
-  display: none;
-  display: inline-block;
+.navLinks {
+  margin-top: 4em;
   float: right;
+  display: none;
+
 }
 
-nav li {
+.navLinks li {
+  /*width: 100%;*/
   display: block;
-  font-size: 1em;
-  padding-top: 5em;
+  background-color: gray;
+  padding: 1.25em;
+  border-bottom: 1px solid white;
+}
+
+.navLinks ul {
+  width: 100%;
+  display: block;
+}
+
+aside button {
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -20em;
+  border: none;
+}
+
+.button-left {
+  float: right;
 }
 
 @media screen and (min-width: 640px) {
@@ -38,16 +58,17 @@ nav li {
     display: none;
   }
 
-  nav ul {
+  .navLinks {
+    margin-top: 0em;
     display: inline-block;
     float: right;
-    margin-top: none;
   }
 
-  nav li {
+  .navLinks li {
+    background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     float: right;
-    font-size: 1em;
-    padding: 1em;
+    padding: 1.25em;
+    border-bottom: 0px solid white;
   }
 }
