@@ -29,7 +29,6 @@ nav h1 {
 }
 
 .navLinks li {
-  /*width: 100%;*/
   display: block;
   background-color: gray;
   padding: 1.25em;
@@ -48,7 +47,7 @@ nav h1 {
     display: none;
   }
 
-  .navLinks {
+  #navLinks {
     margin-top: 0em;
     display: inline-block;
     float: right;
