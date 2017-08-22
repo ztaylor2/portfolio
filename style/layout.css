@@ -41,17 +41,7 @@ nav h1 {
   display: block;
 }
 
-aside button {
-  padding: 2em;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  top: -20em;
-  border: none;
-}
 
-.button-left {
-  float: right;
-}
 
 @media screen and (min-width: 640px) {
   .fa {

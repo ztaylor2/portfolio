@@ -1,6 +1,22 @@
-.carousel img {
-  max-width: 100%;
+#carousel img {
+  width: 100%;
 }
+
+aside button {
+  padding: 2em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -20em;
+  border: none;
+}
+
+.button-right {
+  float: right;
+}
+
+
+
 
 .content h2 {
   font-size: 2em;

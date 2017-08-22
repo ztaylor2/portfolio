@@ -4,8 +4,7 @@ var websiteView = {};
 
 // drop down menu
 websiteView.dropdownMenu = function() {
-
-  $('.fa').on('click', function() {
+  $('.fa').on('mouseover', function() {
     $('.navLinks').slideToggle();
   });
 };
@@ -25,9 +24,7 @@ websiteView.carousel = function() {
       index = 0;
     }
     imgList[index].show();
-
   });
-
 
   $('.button-left').on('click', function() {
     index--;
@@ -52,12 +49,8 @@ websiteView.navigationTabs = function() {
   });
 
   // on page load click first item in nav
-  $('nav a').click();
+  $('nav a:last').click();
 };
-
-
-
-
 
 $(document).ready(function() {
   websiteView.navigationTabs();
