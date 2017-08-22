@@ -4,8 +4,8 @@ var websiteView = {};
 
 // drop down menu
 websiteView.dropdownMenu = function() {
-  $('.fa').on('mouseover', function() {
-    $('.navLinks').slideToggle();
+  $('.fa').on('click', function() {
+    $('div.navLinks').slideToggle();
   });
 };
 

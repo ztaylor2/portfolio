@@ -15,9 +15,6 @@ aside button {
   float: right;
 }
 
-
-
-
 .content h2 {
   font-size: 2em;
   padding: .5em;
@@ -57,8 +54,4 @@ aside button {
 
 .content li {
   color: white;
-}
-
-section {
-  display: none;
 }
