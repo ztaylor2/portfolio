@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="style/layout.css" />
     <link rel="stylesheet" href="style/modules.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <article data-tab="{{tab}}">
+        <h1>{{title}}</h1>
+        <section class="tab-body">{{{body}}}</section>
+      </article>
+    </script>
   </head>
 
   <body>
@@ -38,7 +45,11 @@
     </aside>
 
     <main class="content">
-      <section class="about">
+      <section id="articles">
+      </section>
+
+
+      <!-- <section class="about">
         <h2>About</h2>
         <article>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus et libero suscipit rhoncus vel eget nibh. Etiam fermentum enim eu mi blandit, et sagittis ex aliquet. </h3>
@@ -63,7 +74,7 @@
             <li>Nav Item 3</li>
           </ul>
         </article>
-      </section>
+      </section> -->
     </main>
 
     <footer>
@@ -74,7 +85,11 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous">
-    </script>
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js">
+      </script>
+    <script src="data/tab-data.json"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/view.js"></script>
   </body>
 </html>
