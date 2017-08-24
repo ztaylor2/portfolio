@@ -1,0 +1,9 @@
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+aside {
+  max-width: 940px;
+  margin: auto;
+}
