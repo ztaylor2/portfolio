@@ -27,9 +27,9 @@
         <div class="fa fa-bars"></div>
         <div class="navLinks" id="navLinks">
           <ul>
-            <li><a href="" id="skills">Skills</a></li>
-            <li><a href="" id="projects">Projects</a></li>
-            <li><a href="" id="about">About</a></li>
+            <li><a href="" id="Skills">Skills</a></li>
+            <li><a href="" id="Projects">Projects</a></li>
+            <li><a href="" id="About">About</a></li>
           </ul>
         </div>
       </nav>
@@ -45,41 +45,12 @@
     </aside>
 
     <main class="content">
-      <section id="articles">
+      <section id="tabs">
       </section>
-
-
-      <!-- <section class="about">
-        <h2>About</h2>
-        <article>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus et libero suscipit rhoncus vel eget nibh. Etiam fermentum enim eu mi blandit, et sagittis ex aliquet. </h3>
-        </article>
-      </section>
-
-      <section class="projects">
-        <h2>Projects</h2>
-        <article>
-          <h3>Project Name</h3>
-          <img src="http://placehold.it/600x600/ffffff">
-          <a>linktoproject.com</a>
-        </article>
-      </section>
-
-      <section class="skills">
-        <h2>Skills</h2>
-        <article>
-          <ul>
-            <li>Nav Item 1</li>
-            <li>Nav Item 2</li>
-            <li>Nav Item 3</li>
-          </ul>
-        </article>
-      </section> -->
     </main>
 
     <footer>
     </footer>
-
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -89,7 +60,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js">
       </script>
     <script src="data/tab-data.json"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/view.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/tabView.js"></script>
+    <script>
+      Tab.fetchAll();
+    </script>
   </body>
 </html>
