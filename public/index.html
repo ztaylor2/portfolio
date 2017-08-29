@@ -27,19 +27,19 @@
         <div class="fa fa-bars"></div>
         <div class="navLinks" id="navLinks">
           <ul>
-            <li><a href="" id="Skills">Skills</a></li>
-            <li><a href="" id="Projects">Projects</a></li>
-            <li><a href="" id="About">About</a></li>
+            <li><a href="/skills" id="Skills">Skills</a></li>
+            <li><a href="/projects" id="Projects">Projects</a></li>
+            <li><a href="/" id="About">About</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <aside id="carousel">
-      <img class="slide" id="1" src="img/me.jpg"  />
-      <img class="slide" id="2" src="img/pic6.png"  />
-      <img class="slide" id="3" src="img/pic5.jpeg" />
-      <img class="slide" id="4" src="img/me4.jpg" />
+      <img class="slide" id="1" src="/img/me.jpg"  />
+      <img class="slide" id="2" src="/img/pic6.png"  />
+      <img class="slide" id="3" src="/img/pic5.jpeg" />
+      <img class="slide" id="4" src="/img/me4.JPG" />
       <button class="button-left">&#12296;</button>
       <button class="button-right">&#12297;</button>
     </aside>
@@ -59,11 +59,15 @@
       </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js">
       </script>
-    <script src="data/tab-data.json"></script>
-    <script src="scripts/tabs.js"></script>
-    <script src="scripts/tabView.js"></script>
-    <script>
-      Tab.fetchAll();
-    </script>
+      <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/models/tab-data.json"></script>
+    <script src="scripts/models/tabs.js"></script>
+    <script src="scripts/views/tabView.js"></script>
+
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/projectsController.js"></script>
+    <script src="scripts/controllers/skillsController.js"></script>
+
+    <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>
