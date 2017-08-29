@@ -55,3 +55,12 @@ aside button {
 .content li {
   color: white;
 }
+
+.navLinks {
+  display: none;
+  z-index: 1;
+}
+
+nav:hover div.navLinks {
+    display: block;
+}
