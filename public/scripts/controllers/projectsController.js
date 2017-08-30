@@ -10,7 +10,9 @@ var app = app || {};
 
     $('#tabs *').hide();
     $('#tabs').append(projects);
-  }
+
+    app.repos.requestRepos(app.projectsView.index)
+  };
 
   module.projectsController = projectsController;
 })(app);

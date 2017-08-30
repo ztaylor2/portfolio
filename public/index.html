@@ -17,6 +17,12 @@
         <section class="tab-body">{{{body}}}</section>
       </article>
     </script>
+
+    <script id="repo-template" type="text/x-handlebars-template">
+        <h1>{{name}}</h1>
+        <p>Total number of commits: {{}}</p>
+        <p>Average length of your commit messages: {{}}</p>
+    </script>
   </head>
 
   <body>
@@ -47,6 +53,8 @@
     <main class="content">
       <section id="tabs">
       </section>
+      <section id="projects">
+      </section>
     </main>
 
     <footer>
@@ -62,7 +70,11 @@
       <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/models/tab-data.json"></script>
     <script src="scripts/models/tabs.js"></script>
+    <script src="scripts/models/githubToken.js"></script>
+    <script src="scripts/models/repos.js"></script>
+
     <script src="scripts/views/tabView.js"></script>
+    <script src="scripts/views/projectsView.js"></script>
 
     <script src="scripts/controllers/aboutController.js"></script>
     <script src="scripts/controllers/projectsController.js"></script>
