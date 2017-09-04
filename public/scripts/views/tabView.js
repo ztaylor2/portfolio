@@ -6,13 +6,6 @@ var app = app || {};
 
   var tabView = {};
 
-  // drop down menu
-  // tabView.dropdownMenu = function() {
-  //   $('.fa').on('click', function() {
-  //     $('div.navLinks').slideToggle();
-  //   });
-  // };
-
   tabView.carousel = function() {
     var index = 0;
     var imgList = [$('#1'), $('#2'), $('#3'), $('#4')];
@@ -40,7 +33,6 @@ var app = app || {};
   };
 
   tabView.initIndexPage = function() {
-    // tabView.dropdownMenu();
     tabView.carousel();
   };
 

@@ -6,6 +6,10 @@ var app = app || {};
 
   repos.all = [];
   repos.commits = []
+  repos.log = function() {
+    console.log(repos.all);
+    console.log(repos.commits);
+  }
 
   repos.requestRepos = function(callback) {
 
@@ -14,29 +18,12 @@ var app = app || {};
       data.forEach(function(repo) {
         repos.all.push(repo.name)
         $.get(`${repo.commits_url}`.slice(0, -6))
-        .then(data => repos.commits.push(data.length))
-      }) // closes for each
-    }) // closes then
+        .then(data => repos.commits.push(data.length)).then(app.projectsView.projects(repos.all, repos.commits))
+      })
+    })
     .then(callback);
 
-    console.log(repos.all);
-    console.log(repos.commits);
-
-    // $.ajax({
-    //   url: 'https://api.github.com/user/repos',
-    //   method: 'GET',
-    //   headers: { Authorization: `token ${process.env.GITHUB_TOKEN}` },
-    //   success: function(data) {
-    //
-    //       // .then(data => data.forEach(repo => console.log(repo.commit)
-    //
-    //     });
-    //   }
-    // })
-
   };
-
-//   .then(data => data.forEach(repo => repos.all.push(repo),
 
   repos.with = attr => repos.all.filter(repo => repo[attr]);
 
