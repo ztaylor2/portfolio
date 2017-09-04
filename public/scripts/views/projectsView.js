@@ -12,5 +12,14 @@ var app = app || {};
     );
   };
 
+  projectsView.projects = function(repos, commits) {
+    $('#projects > p').hide();
+    for(var i = 0; i < repos.length; i++) {
+      $('#projects').append(
+        `<p>${repos[i]} has ${commits[i]}  commits.</p>`
+      )
+    }
+  }
+
   module.projectsView = projectsView;
 })(app);

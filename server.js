@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const requestProxy = require('express-request-proxy');
 
-const conString = process.env.DATABASE_URL || 'postgres://localhost:5432'; // DONE: Don't forget to set your own conString
+const conString = process.env.DATABASE_URL || 'postgres://localhost:5432';
 const client = new pg.Client(conString);
 
 app.use(express.static('./public'));
